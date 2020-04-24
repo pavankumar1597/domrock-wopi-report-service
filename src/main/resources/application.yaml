@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    mongodb:
+      host: esbtestedockersrv1.eastus2.cloudapp.azure.com
+      port: 27018
+      database: db-demo-dev-gold
+      username: backend
+      password: bV4yPsWFZz2P8vWmGKa7XHLQL
+      authentication-database: admin
+
+azure:
+  storage:
+    account-key: pAqfGYN+bhVHJ7WO9Ek8qC34vVivF+4BtuZ4hVUed+krX0Yo4Sbv4Uv2+jsAxRXz7eDrCJleD2U4km+5BQDMlA==
+    container-name: wopi-container
+    enable-https: true
+    account-name: armenwopidata
+
+file:
+  name: temp
+  extension: .xlsx
