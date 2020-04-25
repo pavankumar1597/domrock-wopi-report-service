@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/v1")
+@RequestMapping("/report")
 public class ReportController {
 
     private final ReportDetailService detailService;
@@ -52,5 +52,10 @@ public class ReportController {
     public ResponseEntity<ReportGeneratorResponse> generateWopiFile(@PathVariable("id") String id) {
 
         return ResponseEntity.ok(fileGeneratorService.generateWopiFile(id));
+    }
+
+    @GetMapping("/health")
+    public String health() {
+        return "UP";
     }
 }
